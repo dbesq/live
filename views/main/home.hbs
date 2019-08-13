@@ -1,0 +1,47 @@
+<div class="hero">
+	<div class="container">
+		<div class="heroImage"></div>
+		<div class="row">
+			<div class="hero-heading">
+				Do you have a living room to host an event? <br />
+				Do you have an act in need of an intimate venue? <br />
+				Get together on L,FMLR.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-3 col-md-6">
+				<form method="post" action="/search">
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" name="search_input"
+							placeholder="What are you searching?...">
+						<span class="input-group-btn">
+							<input type="submit" class="btn btn-success" value="Find Gigs">
+						</span>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container section">
+	<h1>
+		Newest Events
+	</h1>
+	<div class="row"></div>
+	{{#each gigs}}
+	<div class="col-md-3">
+		<div class="gig-card">
+			<a href="/service_detail/{{ _id }}"><img src="/img/defaultImageMusic.jpg" /></a>
+			<h4>
+				{{ title }}
+			</h4>
+			<h3>
+				${{price}}
+			</h3>
+		</div>
+	</div>
+	{{/each}}
+
+</div>
+</div>

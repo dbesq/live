@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="overview">
+        <h2 class="text-center">Enter your event details</h2>
+        <br />
+        <div class="new-gig-card">
+          <form method="post">
+            <div class="form-group">
+              <label>Event title</label>
+              <input type="text" class="form-control" placeholder="I will do something" name="gig_title">
+
+            </div>
+
+            <div class="form-group">
+              <label>Event price</label>
+              <input type="text" class="form-control" placeholder="$3" name="gig_price">
+            </div>
+
+            <div class="form-group">
+              <label>Event category</label>
+              <input type="text" class="form-control" placeholder="Enter category of event (e.g. Music, Speech, Comedy, Sales)" name="gig_category">
+              {{!-- <select class="form-control" name="gig_category">
+                <option>Music</option>
+                <option>Speech</option>
+                <option>Teach a Class</option>
+                <option>Comedy</option>
+                <option>Other</option>
+              </select> --}}
+            </div>
+
+            <div class="form-group input-group-lg">
+              <label>Event about</label>
+              <input type="text" class="form-control" placeholder="Describe your gig" name="gig_about">
+            </div>
+
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
