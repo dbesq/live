@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div id="code"></div>
+      <div class="overview">
+
+        <input type="hidden" value="{{ venue._id }}" id="gig_id" />
+        <div class="template-card">
+          <div class="name">
+            <h2 class="h2-size">{{venue.type}}</h2>
+            <hr />
+            <img class="image-test" src="{{venue.picture}}"/>
+            <hr />
+            <h3 class="h2-size">{{venue.location}}</h3>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="overview">
+        <div class="about-card">
+          <div class="name">
+            <h2 class="h2-size">About venue</h2>
+            <hr />
+            <h4> {{ venue.about }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="overview">
+      <div class="order-card">
+        <div class="name">
+          <h3>{{ venue.price }} Connect with host </h3>
+          <a href="/checkout/single_package/{{venue._id }}" class="btn btn-success btn-lg">[Note: button to connect w/ host for artist to coordinate gig w/ host]</a>
+          <button class="btn btn-success btn-lg space-left" id="add-to-cart"><i class="fa fa-shopping-cart"></i>[Note: Button for something else]</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>

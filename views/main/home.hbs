@@ -33,14 +33,14 @@
 			<h1>
 				Newest Venues
 			</h1>
-			{{#each gigs}}
+			{{#each venues}}
 			<div class="gig-card">
-				<a href="/service_detail/{{ _id }}"><img src="/img/defaultImageMusic.jpg" /></a>
+				<a href="/venue_detail/{{ _id }}"><img src="/img/defaultImageDining.jpg" /></a>
 				<h4>
-					{{ title }}
+					{{ type }}
 				</h4>
 				<h3>
-					${{price}}
+					{{ location }}
 				</h3>
 			</div>
 			{{/each}}
