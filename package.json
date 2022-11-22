@@ -28,7 +28,7 @@
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "passport.socketio": "^3.7.0",
-    "socket.io": "^1.7.3",
+    "socket.io": "^4.5.3",
     "stripe": "^4.25.0"
   },
   "description": ""
